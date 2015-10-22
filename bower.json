@@ -1,0 +1,19 @@
+{
+  "name": "github-profile",
+  "authors": [
+    "kmwitherspoon <kellee.morgan.witherspoon@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "keywords": [
+    "github"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "dependencies": {
+    "moment": "~2.10.6",
+    "octicons": "*"
+  }
+}
