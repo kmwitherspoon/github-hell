@@ -334,6 +334,54 @@ form input {
   padding: 30px;
 }
 
+.btn-search {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 20px;
+  color: #333;
+  background-color: #eee;
+  border: 1px solid #d5d5d5;
+  border-radius: 3px;
+  padding: 3px;
+}
+
+.repo-nav {
+      margin-bottom: 20px;
+      color: #4078c0;
+  ul {
+    float: right;
+    li {
+    display: inline-block;
+    list-style: none;
+    margin-left: 12px;
+    font-size: 14px;
+  }
+}
+}
+
+.btn-new {
+  background-color: #60b044;
+  color: white;
+  padding: 6px 12px;
+  font-size: 13px;
+  font-weight: bold;
+  border-radius: 3px;
+  background-image: linear-gradient(#8add6d, #60b044);
+  .octicon {
+    padding-right: 5px;
+  }
+}
+
+.repo-nav form {
+  width: 260px;
+}
+
+.search-repo {
+  min-height: 35px;
+  width: 260px;
+}
+
 .item-name {
   color: #4078c0;
   margin: 0 0 8px;
@@ -359,6 +407,43 @@ form input {
   font-size: 13px;
 }
 
+.master {
+  padding: 2px 6px;
+  font: 12px;
+  background-color: rgba(209,227,237,0.5);
+  border-radius: 3px;
+  a {
+    color: #4078c0;
+    text-decoration: none;
+  }
+}
+
+.no-icon {
+  margin-left: 10px;
+}
+
+.bold {
+  font-weight: bold;
+  .octicon {
+    float: left;
+    font-size: 32px;
+    padding: 3px;
+  }
+}
+
+.icon {
+  font-size: 12px;
+  margin-left: 40px;
+  font-weight: normal;
+  img {
+    border-radius: 3px;
+  }
+}
+
+.moment {
+  font-weight: normal;
+}
+
 .repo-item {
   padding-right: 10px;
 }
@@ -372,8 +457,19 @@ form input {
 }
 
 .events-data {
+  color: #767676;
   font-size: 14px;
   margin-bottom: 10px;
+  border-bottom: 1px solid #eee;
+  padding: 10px;
+}
+
+.login {
+  color: #4078c0;
+}
+
+.octicon-git-branch, .octicon-git-commit, .octicon-repo {
+  padding-right: 20px;
 }
 
 footer li {
@@ -381,24 +477,22 @@ footer li {
   font-size: 12px;
 }
 
-.footer-one p {
-  font-weight: normal;
-}
 
 .footer-one {
   padding: 10px;
-}
-
-.footer-one ul{
   display: inline-block;
   list-style: none;
+  margin: 0;
   text-decoration: none;
+  p {
+    font-weight: normal;
+  }
+  li {
+    display: inline-block;
+    margin-left: 10px;
+  }
 }
 
-.footer-one li {
-  display: inline-block;
-  margin-left: 10px;
-}
 
 footer .octicon-mark-github {
   margin: 0px 10px;
@@ -406,15 +500,11 @@ footer .octicon-mark-github {
 
 .footer-two {
   float: right;
-}
-
-.footer-two ul {
-  display: inline-block;
+  margin: 0;
   list-style: none;
   text-decoration: none;
-}
-
-.footer-two li {
+  li {
   display: inline-block;
   margin-left: 10px;
+}
 }

@@ -55,22 +55,21 @@ $('.col-maincontent').append('<div class="repo-wrapper"></div>');
 var repoFun = _.map(repo, function(item){
   return '<div class="repo-data"><span class="item-name">' + item.name + '</span>' + '<div class="bold-info"><span class="item-language repo-item">' + item.language + '</span>' + '<span class="octicon octicon-star"></span>' + '<span class="star-g repo-item">' + item.stargazers_count + '</span>' + '<span class="octicon octicon-git-branch"></span>' + '<span class=" repo-item forks">' + item.forks_count + '</span></div>' + '<br>' + '<span class="update">Updated at ' + moment(item.updated_at).startOf('day').from(item.created_at) + '</span>' + '<br>' + '</div>';
 });
+$('.repo-wrapper').append('<div class="repo-nav"><form><input type="text" class ="search-repo" name="search" value="" placeholder="Find a Repository..."></form><div class="btn-search">Search</div><ul><li>All</li><li>Public</li><li>Private</li><li>Sources</li><li>Forks</li><li>Mirrors</li><li><div class="btn-new"><span class="octicon octicon-repo"></span>New</div></li></ul>');
+
 $('.repo-wrapper').append(repoFun);
 $('.col-maincontent').append('<div class="public-act"></div>');
 
 var pubFun = _.map(events, function(item){
   if(item.payload.ref === "master") {
-    return '<div class="events-data"><span class="events-login">' + item.actor.login + ' created at branch ' + item.payload.master_branch + ' at ' + item.repo.name + ' ' + moment(item.created_at).startOf('day').fromNow() +'</span></div>';
+    return '<div class="events-data"><span class="events-login"><span class="octicon octicon-git-branch"></span>' + ' ' + '<span class="login">' + item.actor.login + '</span>' + ' created at branch <span class="master"><a href="#">' + item.payload.master_branch + '</a></span> at ' + '<span class="login">' + item.repo.name + '</span>' + ' ' + moment(item.created_at).startOf('day').fromNow() +'</span></div>';
   } else if (item.payload.ref === "refs/heads/master"){
-    return '<div class="events-data"><span class="events-login">'+ moment(item.created_at).startOf('day').fromNow() + '<br>' + item.actor.login + ' pushed to <span class="master">master</span> at ' + item.repo.name +'</span>' + '<br>' + item.payload.head + ' ' /*+ _.object(item.payload.commits, function(items){
-      return items.message;
-    })*/ + '</div>';
+    return '<div class="events-data bold"><span class="events-login"><span class="octicon octicon-git-commit"></span>' + '<span class="no-icon"> ' + '<span class="moment">' + moment(item.created_at).startOf('day').fromNow() + '</span><br>' + '<span class="login">' + item.actor.login + '</span>' + ' pushed to ' + '<span class="master"><a href="#">master</a></span>' + ' at ' +'<span class="login">' + item.repo.name + '</span></span>' + '<br>' + '<span class="icon"><img style="width: 30px; height:30px;" src="https://avatars.githubusercontent.com/u/10899017?v=3">' + ' ' + '<img style="width: 10px; height:10px;" src="https://avatars.githubusercontent.com/u/10899017?v=3">' + item.payload.head + ' ' + item.payload.commits[0].message + '</span></span></div>';
   } else {
-    return '<div class="events-data"><span class="events-login">' + item.actor.login + ' created repository ' + item.repo.name + ' ' + moment(item.created_at).startOf('day').fromNow() +'</span></div>';
+    return '<div class="events-data"><span class="events-login"><span class="octicon octicon-repo"></span>' + ' ' + '<span class="login">' + item.actor.login + '</span>' + ' created repository ' + '<span class="login">' + item.repo.name + '</span>' + ' ' + moment(item.created_at).startOf('day').fromNow() +'</span></div>';
   }
 });
-$('.public-act').append(pubFun);
-$('')
+$('.public-act').append(pubFun).css('display', 'none');
 $('.repo-click').click(function () {
    $('.repo-wrapper').css('display', 'block');
    $('.public-act').css('display', 'none');
@@ -80,7 +79,5 @@ $('.repo-click').click(function () {
    $('.repo-wrapper').css('display', 'none');
  });
 $('.wrapper').append('<footer></footer>');
-$('footer').append('<nav class="footer-one"></nav>')
-$('.footer-one').append('<ul><li><p>© 2015 GitHub, Inc. </p></li><li>Terms</li><li>Privacy</li><li>Security</li><li>Contact</li><li>Help</li></ul><span class="octicon octicon-mark-github"></span>');
-$('footer').append('<nav class="footer-two"></nav>');
-$('.footer-two').append('<ul><li>Status</li><li>API</li><li>Training</li><li>Shop</li><li>Blog</li><li>About</li><li>Pricing</li></ul>');
+$('footer').append('<ul class="footer-one"><li><p>© 2015 GitHub, Inc. </p></li><li>Terms</li><li>Privacy</li><li>Security</li><li>Contact</li><li>Help</li></ul><span class="octicon octicon-mark-github"></span>');
+$('footer').append('<ul class="footer-two"><li>Status</li><li>API</li><li>Training</li><li>Shop</li><li>Blog</li><li>About</li><li>Pricing</li></ul>');
