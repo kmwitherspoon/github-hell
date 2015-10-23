@@ -1,24 +1,20 @@
 * {
-    box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 body {
-  background-color: rgb(255, 255, 255);
+  background-color: white;
   font: 13px/1.4 Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
-  margin: 0;
-}
+  margin: 0; }
 
 h1 {
-  font-size: 30px;
-}
+  font-size: 30px; }
 
 .main-content-container {
   width: 980px;
   margin-right: auto;
   margin-left: auto;
   margin-top: 20px;
-  margin-bottom: 20px;
-}
+  margin-bottom: 20px; }
 
 footer {
   clear: both;
@@ -29,8 +25,7 @@ footer {
   padding-top: 40px;
   padding-bottom: 40px;
   color: #767676;
-  border-top: 1px solid #eee;
-}
+  border-top: 1px solid #eee; }
 
 header {
   padding-top: 10px;
@@ -38,41 +33,35 @@ header {
   min-width: 1000px;
   background-color: #f5f5f5;
   border-bottom: 1px solid #e5e5e5;
-  height: 50px;
-}
+  height: 50px; }
 
-ul{
-padding: 0;
-margin-top: 0;
-margin-bottom: 0;
-}
+ul {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0; }
 
 .container {
   width: 980px;
   margin-right: auto;
-  margin-left: auto;
-}
+  margin-left: auto; }
 
 .container .octicon-mark-github {
   width: 28px;
   height: 28px;
-  font-size: 28px;
-}
+  font-size: 28px; }
 
 .container a {
   float: left;
   margin-right: 10px;
   margin-left: -2px;
   color: #333;
-  white-space: nowrap;
-}
+  white-space: nowrap; }
 
 form {
-    position: relative;
-    float: left;
-    width: 360px;
-    margin-right: 10px;
-}
+  position: relative;
+  float: left;
+  width: 360px;
+  margin-right: 10px; }
 
 form input {
   position: relative;
@@ -81,18 +70,15 @@ form input {
   padding: 2px;
   font-size: 12px;
   display: block;
-  line-height: 17px;
-}
+  line-height: 17px; }
 
 .header-nav {
-   list-style: none;
-   display: inline-flex;
-   float: left;
-   }
+  list-style: none;
+  display: inline-flex;
+  float: left; }
 
 .header-nav li {
-  float: left;
-}
+  float: left; }
 
 .header-nav a {
   display: block;
@@ -101,67 +87,57 @@ form input {
   font-weight: bold;
   line-height: 20px;
   color: #333;
-  text-decoration: none;
-}
+  text-decoration: none; }
 
 .header-nav2 {
   float: right;
   list-style: none;
-  margin-right: -8px;
-}
+  margin-right: -8px; }
 
 .header-nav2 li {
   float: left;
   text-decoration: none;
-  list-style: none;
-}
+  list-style: none; }
 
 .header-nav2 li ul {
   display: block;
   list-style: none;
   text-decoration: none;
-  visibility: collapse;
-}
+  visibility: collapse; }
 
 .header-nav2 .header-link {
-    display: block;
-    padding: 4px 8px;
-    font-size: 13px;
-    font-weight: bold;
-    line-height: 20px;
-    color: #333;
-    height: 28px;
-}
-
+  display: block;
+  padding: 4px 8px;
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 20px;
+  color: #333;
+  height: 28px; }
 
 .octicon-bell {
   width: 16px;
   margin-top: 1px;
-  text-align: center;
-}
+  text-align: center; }
 
 .octicon-plus {
   margin-right: 1px;
   width: 16px;
   margin-top: 1px;
-  text-align: center;
-}
+  text-align: center; }
 
 .octicon-triangle-down {
-    display: inline-block;
-    width: 0;
-    height: 0;
-    content: "";
-    vertical-align: -2px;
-    border: 4px solid;
-    border-right-color: transparent;
-    border-left-color: transparent;
-    border-bottom-color: transparent;
-}
+  display: inline-block;
+  width: 0;
+  height: 0;
+  content: "";
+  vertical-align: -2px;
+  border: 4px solid;
+  border-right-color: transparent;
+  border-left-color: transparent;
+  border-bottom-color: transparent; }
 
 .octicon-triangle-down:before {
-    content: '';
-}
+  content: ''; }
 
 .small-profile-icon img {
   float: left;
@@ -170,52 +146,43 @@ form input {
   overflow: hidden;
   line-height: 1;
   vertical-align: middle;
-  border-radius: 3px;
-
-}
+  border-radius: 3px; }
 
 .dropdown {
-  display: none;
-}
+  display: none; }
 
 .cols {
-    margin-right: -10px;
-    margin-left: -10px;
-}
+  margin-right: -10px;
+  margin-left: -10px; }
 
 .sidebar {
   float: left;
   padding-right: 10px;
   padding-left: 10px;
-  width: 25%;
-}
+  width: 25%; }
 
 .col-maincontent {
   width: 75%;
   float: left;
   padding-right: 10px;
-  padding-left: 10px;
-}
+  padding-left: 10px; }
 
 .large-avatar {
-    border-radius: 6px;
-    display: inline-block;
-    overflow: hidden;
-    line-height: 1;
-    vertical-align: middle;
-    height: 230px;
-    width: 230px;
-}
+  border-radius: 6px;
+  display: inline-block;
+  overflow: hidden;
+  line-height: 1;
+  vertical-align: middle;
+  height: 230px;
+  width: 230px; }
 
 .sidebar h1 h2 {
   margin-top: 5px;
-  line-height: 1;
-}
+  line-height: 1; }
 
 .nameInfo {
   border-bottom: 1px solid #eee;
-  border-top: 1px solid #eee;
-}
+  border-top: 1px solid #eee; }
 
 .profile-name {
   display: block;
@@ -224,8 +191,7 @@ form input {
   font-size: 26px;
   line-height: 30px;
   text-overflow: ellipsis;
-  margin-bottom: 0;
-}
+  margin-bottom: 0; }
 
 .username {
   display: block;
@@ -237,21 +203,18 @@ form input {
   line-height: 24px;
   margin-top: 0;
   color: #666;
-  text-overflow: ellipsis;
-}
+  text-overflow: ellipsis; }
 
 .createdat {
   padding-top: 15px;
   padding-bottom: 15px;
   border-top: 1px solid #eee;
-  font-size: 14px;
-}
+  font-size: 14px; }
 
 .octicon-clock {
   width: 16px;
   text-align: center;
-  color: #999;
-}
+  color: #999; }
 
 .number {
   color: #4078c0;
@@ -262,44 +225,36 @@ form input {
   float: left;
   width: 33.333%;
   font-size: 28px;
-  text-transform: capitalize;
-}
+  text-transform: capitalize; }
 
 .number-name {
   color: #767676;
   font-size: 11px;
   margin-top: 2px;
-  display: block;
-}
+  display: block; }
 
 .follow {
-  text-align: center;
-}
+  text-align: center; }
 
 .organize {
   font-size: 16px;
-  border-top: 1px solid #eee;
-}
+  border-top: 1px solid #eee; }
 
 .organize img {
   width: 42px;
-  height: 42px;
-}
+  height: 42px; }
 
 .tab {
   margin-top: 0;
   margin-bottom: 15px;
-  border-bottom: 1px solid #ddd;
-}
+  border-bottom: 1px solid #ddd; }
 
 .edit {
-  float: right;
-}
+  float: right; }
 
 .edit a {
   color: black;
-  text-decoration: none;
-}
+  text-decoration: none; }
 
 .edit-btn {
   display: inline-block;
@@ -310,12 +265,10 @@ form input {
   background-color: #eee;
   border: 1px solid #d5d5d5;
   border-radius: 3px;
-  padding: 3px;
-}
+  padding: 3px; }
 
 .octicon-pencil {
-  margin-right: 1px;
-}
+  margin-right: 1px; }
 
 .tabnav a {
   display: inline-block;
@@ -325,14 +278,24 @@ form input {
   color: #666;
   text-decoration: none;
   border: 1px solid transparent;
-  border-bottom: 0;
-}
+  border-bottom: 0; }
+
+  .repo-click {
+    border-radius: 3px 3px 0px 0px;
+    border-color: #ddd;
+    background-color: #fff;
+  }
+
+  .public-click {
+    border-radius: 3px 3px 0px 0px;
+    border-color: #ddd;
+    background-color: #fff;
+  }
 
 .repo-data {
   border-top: 1px solid #eee;
   border-bottom: 1px solid #eee;
-  padding: 30px;
-}
+  padding: 30px; }
 
 .btn-search {
   display: inline-block;
@@ -343,22 +306,20 @@ form input {
   background-color: #eee;
   border: 1px solid #d5d5d5;
   border-radius: 3px;
-  padding: 3px;
-}
+  padding: 3px; }
 
 .repo-nav {
-      margin-bottom: 20px;
-      color: #4078c0;
-  ul {
-    float: right;
-    li {
-    display: inline-block;
-    list-style: none;
-    margin-left: 12px;
-    font-size: 14px;
-  }
-}
-}
+  margin-bottom: 20px;
+  color: #4078c0; }
+
+.repo-nav ul {
+  float: right; }
+
+.repo-nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin-left: 12px;
+  font-size: 14px; }
 
 .btn-new {
   background-color: #60b044;
@@ -367,144 +328,120 @@ form input {
   font-size: 13px;
   font-weight: bold;
   border-radius: 3px;
-  background-image: linear-gradient(#8add6d, #60b044);
-  .octicon {
-    padding-right: 5px;
-  }
-}
+  background-image: linear-gradient(#8add6d, #60b044); }
+
+.btn-new .octicon {
+  padding-right: 5px; }
 
 .repo-nav form {
-  width: 260px;
-}
+  width: 260px; }
 
 .search-repo {
   min-height: 35px;
-  width: 260px;
-}
+  width: 260px; }
 
 .item-name {
   color: #4078c0;
   margin: 0 0 8px;
   font-size: 20px;
   line-height: 1.2;
-  font-weight: bold;
-}
+  font-weight: bold; }
 
 .item-language, .star-g, .forks {
   font-size: 12px;
   font-weight: bold;
-  color: #888;
-}
+  color: #888; }
 
 .octicon-star, .octicon-git-branch {
   font-size: 12px;
   font-weight: bold;
-  color: #888;
-}
+  color: #888; }
 
 .update {
   color: #888;
-  font-size: 13px;
-}
+  font-size: 13px; }
 
 .master {
   padding: 2px 6px;
   font: 12px;
-  background-color: rgba(209,227,237,0.5);
-  border-radius: 3px;
-  a {
-    color: #4078c0;
-    text-decoration: none;
-  }
-}
+  background-color: rgba(209, 227, 237, 0.5);
+  border-radius: 3px; }
+
+.master a {
+  color: #4078c0;
+  text-decoration: none; }
 
 .no-icon {
-  margin-left: 10px;
-}
+  margin-left: 10px; }
 
 .bold {
-  font-weight: bold;
-  .octicon {
-    float: left;
-    font-size: 32px;
-    padding: 3px;
-  }
-}
+  font-weight: bold; }
+
+.bold .octicon {
+  float: left;
+  font-size: 32px;
+  padding: 3px; }
 
 .icon {
   font-size: 12px;
   margin-left: 40px;
-  font-weight: normal;
-  img {
-    border-radius: 3px;
-  }
-}
+  font-weight: normal; }
+
+.icon img {
+  border-radius: 3px; }
 
 .moment {
-  font-weight: normal;
-}
+  font-weight: normal; }
 
 .repo-item {
-  padding-right: 10px;
-}
+  padding-right: 10px; }
 
 .bold-info {
-  float: right;
-}
+  float: right; }
 
 .public-act {
-  padding: 0 0 1em 45px;
-}
+  padding: 0 0 1em 45px; }
 
 .events-data {
   color: #767676;
   font-size: 14px;
   margin-bottom: 10px;
   border-bottom: 1px solid #eee;
-  padding: 10px;
-}
+  padding: 10px; }
 
 .login {
-  color: #4078c0;
-}
+  color: #4078c0; }
 
 .octicon-git-branch, .octicon-git-commit, .octicon-repo {
-  padding-right: 20px;
-}
+  padding-right: 20px; }
 
 footer li {
   line-height: 16px;
-  font-size: 12px;
-}
-
+  font-size: 12px; }
 
 .footer-one {
   padding: 10px;
   display: inline-block;
   list-style: none;
   margin: 0;
-  text-decoration: none;
-  p {
-    font-weight: normal;
-  }
-  li {
-    display: inline-block;
-    margin-left: 10px;
-  }
-}
+  text-decoration: none; }
 
+.footer-one p {
+  font-weight: normal; }
+
+.footer-one li {
+  display: inline-block;
+  margin-left: 10px; }
 
 footer .octicon-mark-github {
-  margin: 0px 10px;
-}
+  margin: 0px 10px; }
 
 .footer-two {
   float: right;
   margin: 0;
   list-style: none;
-  text-decoration: none;
-  li {
+  text-decoration: none; }
+
+.footer-two li {
   display: inline-block;
-  margin-left: 10px;
-}
-}
+  margin-left: 10px; }

@@ -280,6 +280,16 @@ form input {
   border: 1px solid transparent;
   border-bottom: 0; }
 
+.repo-click {
+  border-radius: 3px 3px 0px 0px;
+  border-color: #ddd;
+  background-color: #fff; }
+
+.public-click {
+  border-radius: 3px 3px 0px 0px;
+  border-color: #ddd;
+  background-color: #fff; }
+
 .repo-data {
   border-top: 1px solid #eee;
   border-bottom: 1px solid #eee;
@@ -299,13 +309,15 @@ form input {
 .repo-nav {
   margin-bottom: 20px;
   color: #4078c0; }
-  .repo-nav ul {
-    float: right; }
-    .repo-nav ul li {
-      display: inline-block;
-      list-style: none;
-      margin-left: 12px;
-      font-size: 14px; }
+
+.repo-nav ul {
+  float: right; }
+
+.repo-nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin-left: 12px;
+  font-size: 14px; }
 
 .btn-new {
   background-color: #60b044;
@@ -315,8 +327,9 @@ form input {
   font-weight: bold;
   border-radius: 3px;
   background-image: linear-gradient(#8add6d, #60b044); }
-  .btn-new .octicon {
-    padding-right: 5px; }
+
+.btn-new .octicon {
+  padding-right: 5px; }
 
 .repo-nav form {
   width: 260px; }
@@ -351,26 +364,29 @@ form input {
   font: 12px;
   background-color: rgba(209, 227, 237, 0.5);
   border-radius: 3px; }
-  .master a {
-    color: #4078c0;
-    text-decoration: none; }
+
+.master a {
+  color: #4078c0;
+  text-decoration: none; }
 
 .no-icon {
   margin-left: 10px; }
 
 .bold {
   font-weight: bold; }
-  .bold .octicon {
-    float: left;
-    font-size: 32px;
-    padding: 3px; }
+
+.bold .octicon {
+  float: left;
+  font-size: 32px;
+  padding: 3px; }
 
 .icon {
   font-size: 12px;
   margin-left: 40px;
   font-weight: normal; }
-  .icon img {
-    border-radius: 3px; }
+
+.icon img {
+  border-radius: 3px; }
 
 .moment {
   font-weight: normal; }
@@ -407,11 +423,13 @@ footer li {
   list-style: none;
   margin: 0;
   text-decoration: none; }
-  .footer-one p {
-    font-weight: normal; }
-  .footer-one li {
-    display: inline-block;
-    margin-left: 10px; }
+
+.footer-one p {
+  font-weight: normal; }
+
+.footer-one li {
+  display: inline-block;
+  margin-left: 10px; }
 
 footer .octicon-mark-github {
   margin: 0px 10px; }
@@ -421,6 +439,7 @@ footer .octicon-mark-github {
   margin: 0;
   list-style: none;
   text-decoration: none; }
-  .footer-two li {
-    display: inline-block;
-    margin-left: 10px; }
+
+.footer-two li {
+  display: inline-block;
+  margin-left: 10px; }
